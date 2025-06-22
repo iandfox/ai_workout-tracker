@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900;
+  }
+  
+  select {
+    @apply appearance-none bg-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md text-white font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700;
+  }
+  .btn-success {
+    @apply bg-green-600 hover:bg-green-700;
+  }
+  .input {
+    @apply px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+  
+  .tag {
+    @apply inline-flex items-center px-2 py-1 text-xs font-medium rounded-full;
+  }
+  
+  /* Simplified workout type tags */
+    .tag-arms { @apply bg-blue-100 text-blue-800; }
+    .tag-back { @apply bg-green-100 text-green-800; }
+    .tag-shoulders { @apply bg-yellow-100 text-yellow-800; }
+    .tag-legs { @apply bg-purple-100 text-purple-800; }
+    .tag-other { @apply bg-gray-100 text-gray-800; }
+  
+    /* Accordion styles */
+    .accordion-header {
+      @apply w-full px-4 py-2 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors;
+    }
+  
+    .accordion-content {
+      @apply p-4 border-t border-gray-200;
+    }
+  
+    .accordion-icon {
+      @apply w-5 h-5 transform transition-transform duration-200;
+    }
+  
+    .accordion-icon-open {
+      @apply rotate-180;
+    }
+  
+  .type-button {
+    @apply px-2 py-1 text-xs rounded border transition-colors cursor-pointer;
+  }
+  
+  .type-button-active {
+    @apply bg-blue-100 border-blue-500 font-medium;
+  }
+  
+  .type-button-inactive {
+    @apply bg-gray-100 border-gray-300 hover:bg-gray-200;
+  }
+  
+  /* Type button grid */
+  .type-grid {
+    @apply grid grid-cols-3 gap-1 mr-2 max-w-[180px] w-[180px];
+  }
+  
+  .filter-buttons {
+    @apply flex flex-wrap items-center gap-2 mb-3;
+  }
+  
+  .filter-label {
+    @apply text-sm font-medium;
+  }
+  
+  .filter-section {
+    @apply mb-4 border border-gray-200 rounded-md;
+  }
+  
+  /* Type button styling */
+  .type-button {
+    @apply px-2 py-1.5 text-xs rounded border flex flex-col items-center;
+  }
+  
+  .type-button-icon {
+    @apply text-base mb-0.5;
+  }
+  
+  .type-button-text {
+    @apply truncate w-full text-center;
+  }
+  
+  @media (max-width: 640px) {
+    .input, .btn {
+      @apply text-sm py-1.5;
+    }
+    
+    table th, table td {
+      @apply py-2 px-2 text-sm;
+    }
+    
+    .type-grid {
+      @apply max-w-[150px] w-[150px];
+    }
+    
+    .type-button {
+      @apply px-1 py-1;
+    }
+    
+    .type-button-icon {
+      @apply text-sm;
+    }
+    
+    .accordion-header {
+      @apply px-3 py-1.5;
+    }
+    
+    .accordion-content {
+      @apply p-3;
+    }
+  }
+}
