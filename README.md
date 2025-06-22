@@ -1,5 +1,11 @@
 # Workout Tracker
 
+> 💭 **Vibe Coding Experiment**
+> **NOTE: This message is the only thing in this entire repo written by a human.**
+> This app was created through "vibe coding," i.e., instructing an AI agent (Claude 3.7 Sonnet) what to build. I didn't touch the code. I dunno... the future is uncertain and mildly concerning. But also it's cool to be able to describe an app that is, essentially, just a CRUD interface, and to just have 'someone' else code it for me. I've thought a lot about how inefficient programming can be; I compare it to creating a new car and building (like, literally sketching out and creating from scratch) an engine each time. At some point, we as programmers need a common toolbox, right? I mean, how many times do we have to write a DB middle layer that's essentially exactly the same each time, except with a couple different buisness logics or fields.
+>
+> Anyway. I guess my point (especially to anyone looking at this repo to investigate if I'm a good programmer) is, I didn't write any of this code myself.
+
 A simple, offline-first web application for tracking your workouts, weights, and progress. This "vibe coded" app is designed to be minimal, fast, and perfect for quick use at the gym when you're exhausted after a hard set.
 
 ## Features
